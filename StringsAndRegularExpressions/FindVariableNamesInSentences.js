@@ -4,7 +4,7 @@ function findVariableNamesInSentences(str) {
 
     vars.push(str.match(regex));
 
-    console.log(vars[0].map(v => v = v.substr(1)).join(","));
+    console.log(vars[0].map(v => v.substr(1)).join(","));
 }
 
 findVariableNamesInSentences("The _id and _age variables are both integers.");
