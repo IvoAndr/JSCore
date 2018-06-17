@@ -3,5 +3,7 @@ function sortArray(data) {
 }
 
 sortArray(["alpha", "beta", "gamma"]);
+console.log("-".repeat(15));
 sortArray(["Isacc", "Theodor", "Jack", "Harrison", "George"]);
+console.log("-".repeat(15));
 sortArray(["test", "Deny", "omen", "Default"]);
