@@ -13,10 +13,21 @@ class Rat {
     getRats() {
         return this.otherRats;
     }
+
+    toString() {
+        let text = this.name + "\n";
+        for (let otherRat of this.otherRats) {
+            text += "##" + otherRat.name + "\n";
+        }
+
+        return text;
+    }
 }
 
 let rat = new Rat("Pesho");
-let otherRat = new Rat("Gosho");
-rat.unite(otherRat);
+rat.unite(new Rat("Gosho"));
+rat.unite(new Rat("Ivan"));
 rat.unite(123);
 console.log(rat.getRats());
+console.log("-".repeat(15));
+console.log(rat.toString());
